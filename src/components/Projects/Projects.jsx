@@ -7,7 +7,7 @@ import AddProject from '../AddProject/AddProject';
 
 function Projects() {
   const nav = useNavigate();
-
+  console.log("first")
   const { data, isFetching ,isSuccess} = useGetProjectsQuery();
   const [projects, setProjects] = useState([]);
 
