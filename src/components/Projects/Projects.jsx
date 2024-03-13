@@ -35,8 +35,6 @@ function Projects() {
 
   return (
     <>
-    {
-      isSuccess?
     
       {isFetching ? (
         <div id="loading-wrapper">
@@ -78,7 +76,6 @@ function Projects() {
   </>
 
     </div> 
-        }
     </>
   );
 }
