@@ -7,6 +7,7 @@ import AddProject from '../AddProject/AddProject';
 
 function Projects() {
   const nav = useNavigate();
+  console.log("first")
   const { data, isFetching ,isSuccess} = useGetProjectsQuery();
   const [projects, setProjects] = useState([]);
 
@@ -35,7 +36,6 @@ function Projects() {
   return (
     <>
     
-      <div className={`${styles.font}`}>
       {isFetching ? (
         <div id="loading-wrapper">
           <div id="loading-text">LOADING</div>
@@ -59,11 +59,23 @@ function Projects() {
         </div>
       )}:<div>
   <>
-   <AddProject/>  
+<div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className={`modal-dialog modal-L ${styles.add_Project}`}>
+    <div className={`modal-content ${styles.add_Project}`}>
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Add Project</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+       <AddProject/>
+      </div>
+      
+    </div>
+  </div>
+</div>
   </>
 
     </div> 
-      </div>
     </>
   );
 }
