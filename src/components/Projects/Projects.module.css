@@ -1,0 +1,40 @@
+
+
+
+.addProject{
+    width: 60px ;
+    height: 60px;
+    background-color:#c59a5a !important;
+    color: aliceblue !important;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addProject:hover{
+    width: 60px ;
+    height: 60px;
+    background-color:aliceblue !important;
+    color: rgb(0, 0, 0) !important;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    border: unset;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.415);
+}
+.add_Project{
+    background-color: rgb(222, 222, 222) !important;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}

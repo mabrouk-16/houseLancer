@@ -1,0 +1,321 @@
+:root{
+    --primary-color: #c59a5a;
+    --secondary-color:#1e1e1e;
+    --focus-color: #aaaaaa;
+}
+
+.err{
+    color: rgb(230, 6, 6) !important;
+    margin-top: -20px;
+    margin-left: 25px ;
+}
+input:focus,textarea:focus{
+    outline: 4px solid  var(--focus-color) !important;
+}
+.section_title{
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: unset !important;
+    color: #c59a5a;
+}
+label{
+    margin-top: -10px;
+}
+
+/* headers */
+.page_heading {
+    background-image: url(../../../public/images/page-heading-bg.jpg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 100px ;
+    text-align: center;
+    height: 50vh;
+  }
+  
+  .page_heading span {
+    background-color: #fff;
+    color: #dd1111;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  
+  .page_heading span a {
+    color: #1e1e1e;
+  }
+  
+  .page_heading h3 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  /* links */
+  .row{
+    margin-top: 0px !important;
+  }
+  
+ 
+  
+  .contact_page p {
+    margin-bottom: 10px;
+  }
+  
+  .contact_page .item {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 30px 30px;
+    background-color: #ffffff5e;
+    display: inline-block;
+    min-width: 360px;
+    width: 100%;
+  }
+  
+  .contact_page .phone {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  .contact_page .item img ,.contact_page .item i{
+    float: left;
+    margin-right: 25px;
+    font-size:xx-large;
+    vertical-align: middle;
+    color: #c59a5a;
+  }
+  
+  .contact_page .item h6 {
+    font-size: 20px;
+    font-weight: 500;
+    vertical-align: middle;
+    color: #606060;
+  }
+  
+  .contact_page .item h6 span {
+    font-size: 15px;
+    color: #aaaaaa;
+    font-weight: 400;
+  }
+  
+  .contact_page #contact_form {
+    /*margin-left: 30px;
+    */border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-width: 500px;
+}
+  
+  .contact_page #contact_form label {
+    font-size: 15px;
+    color: #c59a5a;
+    margin-bottom: 8px;
+    font-weight: bold;
+    margin-left: -1px !important;
+  }
+  
+  .contact_page #contact_form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 0px 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .contact_page #contact_form textarea {
+    width: 100%;
+    height: 110px;
+    max-height: 150px;
+    -o-border-radius: 10px;
+    background-color: #f6f6f6;
+    border: none !important;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 15px 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+  
+  .contact_page #contact_form button {
+    background-color: #d0a666;
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .contact_page #contact_form button:hover {
+    background-color:#1e1e1e;
+  }
+  
+  
+  /* 
+  ---------------------------------------------
+  Responsive Style
+  --------------------------------------------- 
+  */
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 767px) {
+    .header_area .main_nav .logo h1 {
+      line-height: 80px !important;
+    }
+    .best_deal .tabs_content .nav_link {
+      font-size: 14px;
+      padding: 0px 15px;
+      height: 44px;
+      line-height: 44px;
+    }
+    .best_deal .tabs_content ul.nav_tabs li {
+      margin: 0px 5px;
+    }
+    .properties ul.properties_filter li a {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+    .properties ul.properties_filter li {
+      margin: 5px;
+    }
+    .header_area .main_nav .nav li:last-child {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .sub_header {
+      display: none;
+    }
+    .header_area .main_nav .logo h1 {
+      line-height: 100px;
+    }
+    .background-header .main_nav .logo h1 {
+      line-height: 80px;
+    }
+    .header_area .main_nav .nav li a {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+    .header_area .main_nav .nav li:last-child a {
+      padding-right: 15px;
+    }
+    .main_banner .item h2 {
+      width: 100%;
+    }
+    .featured .section_heading {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 100px;
+    }
+    .featured .accordion {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .featured .info_table {
+      margin-top: 45px;
+    }
+    .fun_facts .counter {
+      margin-bottom: 45px;
+    }
+    .best_deal .section_heading {
+      text-align: center;
+    }
+    .best_deal .tabs_content ul.nav_tabs {
+      margin-top: 0px;
+      justify-content: center;
+    }
+    .best_deal .info_table {
+      margin-bottom: 45px;
+    }
+    .best_deal .tab_content img {
+      padding: 0px;
+    }
+    .best_deal .tabs_content h4 {
+      margin-top: 45px;
+    }
+    .properties .item h6 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .properties .item .main_button {
+      text-align: center;
+    }
+    .properties .item ul li {
+      margin-right: 10px;
+      font-size: 13px;
+    }
+    .contact_content .phone {
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+    .contact_content .email {
+      margin-left: 0px;
+      margin-bottom: 45px;
+    }
+    .contact_content #contact_form {
+      margin-left: 0px;
+    }
+    .single_property .info_table {
+      margin-left: 0px;
+      margin-top: 45px;
+    }
+    .contact_page .section_heading {
+      margin-right: 0px !important;
+    }
+    .contact_page #contact_form {
+      margin-left: 0px;
+      margin-top: 60px;
+    }
+    .best_deal .info-table ul li span {
+      float: right !important;
+      width: auto !important;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .best_deal .info_table ul li span {
+      float: none;
+      width: 100%;
+    }
+    .contact_page .section_heading {
+      margin-right: 100px;
+    }
+  }
+  
+  .con{
+      margin-top: -160px;
+  }
+
+
+  .social_links:hover{
+    color: #c59a5a !important;
+  }

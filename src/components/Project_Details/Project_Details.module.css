@@ -1,0 +1,71 @@
+
+/* background-color: rgb(248, 247, 246);
+#c59a5a */
+
+.description{
+    background-color: rgb(248, 247, 246);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.description span{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(150, 149, 149);
+
+    display: block;
+}
+
+.addOffer{
+    background-color: rgb(248, 247, 246);
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.addOffer1{
+    width: 100% !important;
+}
+
+.addOffer span{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(150, 149, 149);
+
+    display: block;
+}
+.project_skills{
+    background-color:#c59a5a !important ;
+    color: aliceblue !important;
+}
+.userImage{
+    width: 60px;
+    height: 60px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    
+}
+
+.All_Offers{
+    background-color: rgb(248, 247, 246);
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.All_Offers span{
+        width: 100%;
+        height: 1px;
+        background-color: rgb(150, 149, 149);
+    
+        display: block;
+    
+}

@@ -1,0 +1,20 @@
+.register_bg{
+    background-image:url("../../../public/images/modern-apartment-with-comfortable-sofa-decor-generated-by-ai.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
+.card_bg{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.802);
+    z-index: 100;
+}
+.layer_bg{
+    background-color: rgba(0, 0, 0, 0.605);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:max-content
+}
