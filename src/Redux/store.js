@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
 import modelReducer from "./slices/modelSlice";
 import canvaReducer from "./slices/canvaSlice";
-import { allProjects } from '../services/api';
-import { setupListeners } from '@reduxjs/toolkit/query/react'; // Import setupListeners function
+import { allProjects } from "../services/api";
+import { setupListeners } from "@reduxjs/toolkit/query/react"; // Import setupListeners function
 import { allOffers } from "../services/offer";
 import { allUsers } from "../services/user";
 
@@ -19,9 +19,8 @@ const store = configureStore({
       allProjects.middleware,
       allOffers.middleware,
       allUsers.middleware
-    ), // Add both RTK Query middlewares in an array
+    ),
 });
 
-setupListeners(store); // Attach listeners
-
+setupListeners(store.dispatch);
 export default store;

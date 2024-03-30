@@ -2,12 +2,12 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
-body {
-  background-color: #222;
+body *:not(.fa-solid ,.fa-regular ,.fa-brands) {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 #loading-wrapper {
   position: fixed;
@@ -147,4 +147,13 @@ body {
   margin: 0 auto;
   text-align: center;
   background-color: #888;
+}
+.btn.active{
+  background-color: #000000d8 !important;
+  color: aliceblue !important;
+  border-radius: 7px 7px 0px 0px !important;
+  -webkit-border-radius: 7px 7px 0px 0px !important;
+  -moz-border-radius: 7px 7px 0px 0px !important;
+  -ms-border-radius: 7px 7px 0px 0px !important;
+  -o-border-radius: 7px 7px 0px 0px !important;
 }

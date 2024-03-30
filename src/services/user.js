@@ -1,8 +1,5 @@
 import {createApi ,fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
-
-
-
 const token = localStorage.getItem('token');
 
 
@@ -23,16 +20,25 @@ const createRequest = (url, method, body) => ({
 
 export const allUsers = createApi({
     reducerPath: 'allUsers',
-    baseQuery: fetchBaseQuery({ baseUrl: baseUrll }),
+    baseQuery: fetchBaseQuery({ baseUrl: baseUrl }),
     tagTypes: ['Users'],
     endpoints: (builder) => ({
         userProfile: builder.query({
-            query: (userId) => createRequest(`user/userProfile/${userId}`, 'GET'),
+            query: () => createRequest(`user/userProfile/`, 'GET'),
             providesTags:['Users']
         }),
+        userProfileId: builder.query({
+            query: (userId) => {
+                const url = userId ? `user/userProfile/${userId}` : 'user/userProfile';
+                return createRequest(url, 'GET');
+            },
+            providesTags:['Users']
+        }),
+        
     }),
 });
 
 export const {
     useUserProfileQuery,
+    useUserProfileIdQuery
 } = allUsers;
