@@ -1,4 +1,15 @@
-.textArea{
+.textArea {
     height: 200px;
-    border:unset !important;
+    border: unset !important;
+}
+
+.overlay {
+    width: 100vw;
+    height: "100vh";
+    position: "absolute";
+    left: "0";
+    top: "0";
+    background-color: bisque;
+    transform: translateX(-100%);
+    transform: translateY(-10%);
 }

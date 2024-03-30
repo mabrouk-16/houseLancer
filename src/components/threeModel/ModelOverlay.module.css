@@ -1,0 +1,49 @@
+/* .backdrop {
+    width: 100%;
+    height: "100vh";
+    position: "absolute";
+    left: "0";
+    top: "0";
+    background-color: rgb(241, 160, 61);
+
+} */
+
+.Modelbackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.model-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 14px;
+    z-index: 2001;
+}
+
+/* @media (min-width: 768px) {
+    .modal {
+        width: 40rem;
+        left: calc(50% - 20rem);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */

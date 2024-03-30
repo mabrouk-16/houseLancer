@@ -8,7 +8,7 @@ function Offer({data}) {
       <div className="designer my-2">
       <div className="d-flex align-items-center border-2 border-dark">
         <div className={``}>
-        <img className={`${styles.userImage} me-4`} src={data.createdBy.image} alt='' />
+        <img className={`${styles.userImage} me-4`} src={'http://localhost:3000/'+ data.createdBy.image} alt='' />
         </div>
         <div className="pt-2">
           <h5 className='my-0'>{data.createdBy.userName}</h5>

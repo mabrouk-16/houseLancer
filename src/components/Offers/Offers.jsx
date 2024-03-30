@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import Offer from '../Offer/Offer';
-import { useGetProjectOffersQuery } from '../../services/offer';
+import React, { useEffect, useState } from "react";
+import Offer from "../Offer/Offer";
+import { useGetProjectOffersQuery } from "../../services/offer";
 
 function Offers({ projectId }) {
-  console.log(projectId)
+  console.log(projectId);
   const { data: projectOffers, error, isLoading } = useGetProjectOffersQuery(projectId);
   const [offers, setOffers] = useState([]);
 
   useEffect(() => {
     if (projectOffers) {
-      console.log(projectOffers)
+      console.log(projectOffers);
       setOffers(projectOffers.data);
     }
   }, [projectOffers]);
@@ -24,12 +24,15 @@ function Offers({ projectId }) {
 
   return (
     <>
-      {offers.length > 0 &&
+      {offers.length > 0 ? (
         offers.map((item) => (
           <div key={item._id}>
             <Offer data={item} />
           </div>
-        ))}
+        ))
+      ) : (
+        <p className="p-3">NO OFFERS FOUND</p>
+      )}
     </>
   );
 }

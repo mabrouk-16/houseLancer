@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { addProject } from '../../Redux/Slices/projectSlice';
+// import { addProject } from '../../Redux/Slices/projectSlice';
 import './User.scss'
 
 function Gallary() {

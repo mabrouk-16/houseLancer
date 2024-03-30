@@ -1,0 +1,56 @@
+
+/* background-color: rgb(248, 247, 246);
+#c59a5a */
+.contain{
+   
+}
+
+.showbox{
+   background-color: rgba(248, 247, 246, 0.467);
+     width:100%;
+     margin: 10px 0px  5px  ;
+     border-radius: 10px;
+     padding: 10px 20px;
+     color: var(--secondary-color);
+     overflow: hidden;
+     
+ }
+ 
+ .showbox button{
+    background-color: #c59a5a;
+    color:white;
+
+
+ }
+ 
+.addOffer{
+   color:white;
+   background-color: rgba(232, 135, 37, 0.467) !important;
+
+   border: unset;
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+   padding: 5px;
+}
+
+ .showbox button:hover{
+    background-color: rgb(222, 222, 222);
+
+ }
+ .userImage{
+    width: 40px;
+    height: 40px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    
+}
+.projectTitle{
+    color: #c59a5a;
+    cursor: pointer;
+}
