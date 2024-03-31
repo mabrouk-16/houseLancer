@@ -123,18 +123,13 @@ function CanvasDrawing(props) {
   return (
     <>
       <div ref={wrapper} className={classes.canvaWrapper}>
-        <canvas
-          id="myCanvas"
-          width={1000}
-          height={600}
-          style={{ border: "2px solid  #ad885f" }}
-        />
+        <canvas id="myCanvas" width={1000} height={600} style={{ border: "2px solid  #ad885f" }} />
         <button
           className={classes.savebtn}
           onClick={() => {
             // props.sendData();
             dispatch(setLines(lines));
-            alert("success , Back to add project");
+            alert(lines);
           }}
         >
           save

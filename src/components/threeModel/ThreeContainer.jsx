@@ -29,7 +29,7 @@ function ThreeContainer() {
           <ModelControls />
           <section className="three-section">
             <AddObjects />
-            <NewThree  />
+            <NewThree />
           </section>
         </>
       )}

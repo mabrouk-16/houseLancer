@@ -19,7 +19,7 @@
     color: white;
     font-size: 13px;
     font-weight: bold;
-    z-index: 100000000;
+    z-index: 10;
 }
 
 .controls button:hover {

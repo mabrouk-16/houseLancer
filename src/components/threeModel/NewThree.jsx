@@ -3,8 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, useTexture } from "@react-three/drei";
 import ModelGroup from "./ModelGroup";
 import { useSelector } from "react-redux";
-import img from "/floor.jpg";
-import wall from "/wall.jpeg";
+import img from "/images/Wallpaper.jpg";
+import img2 from "/images/wall.webp";
 import "./Three.css";
 
 function NewThree(props) {
@@ -46,21 +46,21 @@ function NewThree(props) {
         gl={{ preserveDrawingBuffer: true }}
         ref={canvasRef}
         style={{
-          width: "100%",
-          height: "90%",
+          width: "98%",
+          height: "400px",
           display: "block",
           zIndex: "10000000",
           // border: "5px solid red",
         }}
         camera={{
           fov: 45,
-          near: 0.8,
+          near:0.8,
           far: 10000,
           position: [20, 40, 10],
         }}
       >
         {/* <Environment files="pic.hdr" background /> */}
-        <ambientLight intensity={0.5} position={[5, 10, 15]} />
+        <ambientLight intensity={0.01} position={[5, 10, 15]} />
         <OrbitControls />
         <Walls lines={props.projectLines || []} />
         {/* <Test/> */}
@@ -88,17 +88,11 @@ function Wall({ line }) {
   const positionX = (line.startX + line.endX) / 2;
   const positionY = 5 / 2;
   const positionZ = (line.startY + line.endY) / 2;
-  const rotationY = Math.atan2(
-    line.startY - line.endY,
-    line.startX - line.endX
-  );
-  const wallImg = useTexture(wall);
+  const rotationY = Math.atan2(line.startY - line.endY, line.startX - line.endX);
+  const wallImg = useTexture(img2);
 
   return (
-    <mesh
-      position={[positionX / 10 - 40, positionY, positionZ / 10 - 30]}
-      rotation-y={-rotationY}
-    >
+    <mesh position={[positionX / 10 - 40, positionY, positionZ / 10 - 30]} rotation-y={-rotationY}>
       <boxGeometry args={[distance / 10, 5, 0.4]} />
       <meshBasicMaterial color={0xaaaaaa} map={wallImg} />
       {/* <WallGUI /> */}

@@ -1,6 +1,6 @@
 .savebtn {
     display: block;
-    background-color: rgb(197, 154, 90);
+    background-color: #c9ab7c;
     padding: 10px;
     border-radius: 10px;
     width: 150px;
@@ -13,16 +13,15 @@
 }
 
 .savebtn:hover {
-    background-color: rgb(92, 62, 25);
+    background-color: rgb(122, 101, 76);
 }
 
 canvas {
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .canvaWrapper {
-    height: 70vh;
     position: relative;
     width: fit-content;
     margin: 20px auto;
