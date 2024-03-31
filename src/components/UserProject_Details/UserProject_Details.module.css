@@ -1,0 +1,80 @@
+
+/* background-color: rgb(248, 247, 246);
+#c59a5a */
+.project_d_bg{
+    background-image: url(../../../public/images/modern-apartment-with-comfortable-sofa-decor-generated-by-ai.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.project_d_layer{
+    background-color: rgba(0, 0, 0, 0.646);
+}
+.description{
+    background-color: rgba(248, 247, 246, 0.725);
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.description span{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(150, 149, 149);
+
+    display: block;
+}
+
+.addOffer{
+    background-color: rgba(248, 247, 246, 0.725);
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.addOffer1{
+    width: 100% !important;
+}
+
+.addOffer span{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(150, 149, 149);
+
+    display: block;
+}
+.project_skills{
+    background-color:#c59a5a !important ;
+    color: aliceblue !important;
+}
+.userImage{
+    width: 60px;
+    height: 60px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    
+}
+
+.All_Offers{
+    background-color: rgba(248, 247, 246, 0.725);
+
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.All_Offers span{
+        width: 100%;
+        height: 1px;
+        background-color: rgb(150, 149, 149);
+    
+        display: block;
+    
+}

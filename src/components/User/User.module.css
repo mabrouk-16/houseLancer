@@ -1,0 +1,20 @@
+.user_image{
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    border-radius: 100%;
+    width: 180px;
+}
+.change_image{
+    position: absolute;
+    top: 130px;
+    left: 195px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    padding: 8px;
+}

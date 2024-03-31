@@ -1,0 +1,870 @@
+:root {
+  --primary-color: #c9ab7c;
+  --secondary-color: #3b4f41ff;
+  --focus-color: #aaaaaa;
+  --color-bg: rgb(67, 53, 53);
+}
+
+body {
+}
+body .profilecontainer {
+  background-image: url(../../../public/images/modern-apartment-with-comfortable-sofa-decor-generated-by-ai.jpg);
+
+  backdrop-filter: blur(7px) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  margin-top: 10px;
+}
+.save {
+  margin-left: 660px !important;
+  margin-top: 100px !important;
+  width: 300px !important;
+}
+.save2 {
+  margin-left: 660px !important;
+  margin-top: 10px !important;
+  width: 300px !important;
+}
+.savebtn {
+  margin-top: 90px;
+  margin-left: 210px;
+}
+
+.savebtn button {
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 20px;
+  width: 100px !important;
+}
+.savebtn button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.ui-w-80 {
+  width: 120px !important;
+  height: auto;
+  border-radius: 50%;
+}
+// input{
+//     border-radius: 10px !important;
+//     margin-bottom: 8px !important;
+
+// }
+.myinput {
+  width: 70% !important;
+}
+// input:focus,input:hover{
+//    outline: 2px solid var(--secondary-color) !important;
+//    border: 1px solid var(--secondary-color) !important;
+// }
+.bg-side {
+  // background-color: var(--secondary-color) !important;
+  font-size: 17px;
+  width: 190px !important;
+  height: 80vh;
+  background-color: var(--secondary-color) !important;
+  // background-color: #9f7b5926;
+}
+.Sidebar {
+  font-weight: bold;
+  color: rgb(237, 231, 226) !important;
+  // width:100% !important;
+  // background-color: #9f7b5926 !important;
+  background-color: var(--secondary-color) !important;
+
+  // background: linear-gradient(to bottom, rgb(70, 41, 8),var(--secondary-color) ,rgb(70, 41, 8));
+}
+
+/* CSS for the collapsed sidebar */
+.col_side.collapsed {
+  width: 70px !important;
+  margin-right: 70px;
+}
+
+/* CSS for the expand/collapse button */
+.btn-collapse {
+  margin-bottom: 10px;
+  color: white !important;
+}
+
+.btn-default {
+  border-color: rgba(24, 28, 33, 0.1);
+  font-weight: bold !important;
+  color: rgb(244, 230, 207) !important;
+}
+.eye {
+  margin-left: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
+}
+.eye:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+.btn-default:hover {
+  color: var(--primary-color) !important;
+}
+.firstbar {
+  background: linear-gradient(
+    to bottom,
+    rgb(70, 41, 8),
+    var(--secondary-color),
+    rgb(70, 41, 8)
+  ) !important;
+}
+
+label.btn {
+  margin-bottom: 0;
+}
+// label{
+//     font-weight: bold;
+//     color: var(--secondary-color) !important;
+//     font-style:italic;
+// }
+textarea {
+  height: 120px !important;
+}
+.btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  background: transparent;
+  color: var(--primary-color) !important;
+  border-radius: 10px !important;
+  height: 30px;
+  font-weight: bold !important;
+  font-size: 12px !important;
+}
+
+.gender {
+  margin-left: 5px;
+  margin-top: 0px !important;
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.radio:hover,
+.radio2:hover,
+.radio:focus,
+.radio2:focus,
+.radio:checked {
+  border: 0px !important;
+  outline: 0px !important;
+  color: black !important;
+  background-color: #9f7b59 !important;
+}
+
+/* Style the radio button when it's checked */
+// input[type="radio"]:checked {
+//     background-color: #0f141a !important; /* Change the background color */
+//     border-color: #007bff; /* Change the border color */
+// }
+
+.addimgbtn {
+  // border-color:0.5px solid var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+  color: rgb(126, 101, 64) !important;
+  // border-radius:;
+  height: 18px;
+  width: 10px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: bold !important;
+  font-size: 10px !important;
+  margin-top: -60px;
+  margin-left: 60px !important;
+  // -webkit-border-radius:;
+  // -moz-border-radius:;
+  // -ms-border-radius:;
+  // -o-border-radius:;
+}
+.address {
+  margin-top: -80px;
+}
+.address select {
+  width: 120px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  height: 40px;
+}
+.select2 {
+  margin-top: 10px !important;
+  margin-left: 30px;
+}
+
+.btn-dark {
+  border-radius: 10px;
+  background-color: var(--secondary-color) !important;
+  border: 2px solid var(--secondary-color) !important;
+  margin-left: 940px;
+}
+.btn-outline-primary:hover,
+.btn-dark:hover {
+  background-color: var(--primary-color) !important;
+  color: rgb(244, 242, 240) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+.btn {
+  cursor: pointer;
+}
+
+.text-light {
+  color: #babbbc !important;
+}
+
+.btn-facebook,
+.btn-twitter {
+  border-color: rgba(0, 0, 0, 0);
+  background: hsl(30, 46%, 90%) !important;
+  color: var(--secondary-color) !important;
+}
+
+.btn-instagram {
+  border-color: rgba(235, 22, 22, 0);
+  background: hsl(30, 46%, 90%) !important;
+  color: var(--secondary-color) !important;
+}
+
+.card {
+  // backdrop-filter: blur(5px) saturate(180%) !important;
+  // -webkit-backdrop-filter: blur(5px) saturate(180%) !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(25, 24, 24, 0.162);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for card */
+  z-index: 1;
+  // margin-top: 30px !important;
+  // border: 2px solid var(--secondary-color) !important;
+  // background-clip: padding-box;
+  // background: rgba(255, 255, 255, 0.324) !important;
+  // border: 1px solid black;
+
+  // box-shadow     : 1px 1px 20px 1px rgb(4, 3, 3);
+  height: 80vh !important;
+  width: 90%;
+  margin: 30px auto 0;
+}
+.body-card {
+  display: grid;
+  grid-template-columns: 420px 420px;
+  grid-template-rows: 80px 80px;
+  gap: 10px 30px;
+  margin-top: -45px;
+}
+
+// .alert{
+//     background-color: #fbf4ea !important;
+// }
+.account-settings-fileinput {
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.account-settings-links .list-group-item {
+  font-weight: bold !important;
+  background-color: transparent !important;
+  color: white;
+}
+
+.user_image {
+  background-color: unset;
+}
+
+.account-settings-links .list-group-item.active {
+  font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+  background: transparent !important;
+}
+
+.account-settings-multiselect ~ .select2-container {
+  width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 91, 173, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+  color: var(--primary-color) !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+  color: var(--primary-color) !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: var(--secondary-color) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+  color: var(--primary-color) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+  color: rgb(238, 231, 228) !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+  padding: 0.85rem 1.5rem;
+  border-color: var(--secondary-color) !important;
+}
+
+///////add new item in gallary//////////
+:root {
+  --primary-color: #c9ab7c;
+  --secondary-color: #9f7b59;
+  --focus-color: #aaaaaa;
+  --color-bg: rgb(67, 53, 53);
+  --text-color: rgb(252, 242, 233);
+}
+
+.clr-red {
+  color: red;
+}
+
+.addGallaryBox {
+  // width:900px;
+  height: 80px !important;
+  margin: -10px 0 !important;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 75% 20%;
+  padding: 0px 0px;
+}
+.gallary-form {
+  background-color: rgba(249, 245, 240, 0);
+  padding: 25px;
+  border-radius: 20px;
+  height: 500px;
+  margin-top: -25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px 130px 90px 90px;
+  gap: 5px 25px;
+  overflow: hidden;
+}
+.gallary-form input {
+  width: 100% !important;
+  height: 35px;
+  background-color: #f6f6f6;
+  margin-bottom: 10px !important;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.gallary-form label {
+  margin-bottom: 10px;
+  margin-left: -1px !important;
+}
+.gallary-form .upload {
+  background-color: rgb(251, 250, 247);
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+.gallary-form .upload button {
+  background-color: #fef7ea;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  width: 67%;
+  height: 35px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.upload button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.gallary-form textarea {
+  margin-bottom: 20px;
+  height: 90px !important;
+  width: 100% !important;
+}
+.gallary-form .addbtn {
+  background-color: #d0a666;
+  height: 35px;
+  width: 130px;
+  border-radius: 10px;
+  padding: 0px 20px;
+  color: #fff !important;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.gallary-form .addbtn:hover,
+.gallary-explain:hover {
+  background-color: var(--secondary-color) !important;
+  color: var(var(--text-color)) !important;
+}
+.gallary-explain {
+  background-color: #d0a666;
+  height: 35px;
+  width: 165px;
+  border-radius: 10px;
+  padding: 0px 0px;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.5s;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gallary-form .newinput {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid rgb(224, 219, 219);
+  background-color: #ffffff !important;
+  width: 75% !important;
+}
+
+.gallary-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gallary-form .newfield {
+  width: 130px;
+  height: 35px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 45px;
+}
+
+ul {
+  list-style-type: circle;
+}
+.addGallaryBox h2,
+.addGallaryBox h6 {
+  color: var(--secondary-color);
+}
+.gallarytitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -25px !important;
+  margin-bottom: 5px;
+  margin-left: -60px !important;
+}
+.submitbtn {
+}
+.gallary-form .advices {
+  margin-bottom: 20px;
+}
+// .gallary-form  .advices p{
+//  color: #0f141a !important;
+// }
+
+@media (max-width: 1200px) {
+  .card {
+    width: 900px;
+    margin: 30px auto;
+  }
+  // .card-body{
+  //   width:94% ;
+  // }
+  .body-card {
+    grid-template-columns: 320px 320px;
+  }
+  .bg-side {
+    width: 150px !important;
+    font-size: 15px;
+  }
+  .Sidebar {
+    width: 138px !important;
+  }
+  .addGallaryBox .advices,
+  .gallarytitle button {
+    display: none;
+  }
+  .gallary-form {
+    width: 680px;
+    height: 67vh;
+    margin-left: 20px;
+    margin-top: 10px;
+    grid-template-rows: 80px 130px 80px 80px;
+  }
+  .gallary-form .newinput {
+    width: 74% !important;
+  }
+  .savebtn {
+    margin-top: 110px;
+    margin-left: 99px !important;
+  }
+  .save {
+    margin-left: 460px !important;
+    margin-top: 100px !important;
+  }
+  .save2 {
+    margin-left: 460px !important;
+  }
+  .address {
+    margin-top: -130px;
+  }
+  .gallary-form .upload button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .card {
+    width: 760px;
+    margin: 30px auto !important;
+  }
+  //  .card-body{
+  //    width:98% ;
+  //  }
+  //  .body-card{
+  //    grid-template-columns: 260px 260px;
+
+  //  }
+  .bg-side {
+    width: 130px !important;
+    font-size: 12px;
+  }
+  .Sidebar {
+    width: 118px !important;
+  }
+  .addGallaryBox .advices,
+  .gallarytitle button {
+    display: none;
+  }
+  .gallary-form {
+    width: 580px;
+    height: 67vh;
+    margin-left: 7px;
+    margin-top: 10px;
+    grid-template-rows: 80px 130px 80px 80px;
+  }
+  .gallary-form .newinput {
+    width: 69% !important;
+  }
+  .savebtn {
+    margin-top: 110px;
+    margin-left: 50px !important;
+  }
+  .save {
+    margin-left: 360px !important;
+    margin-top: 100px !important;
+  }
+  .save2 {
+    margin-left: 360px !important;
+  }
+  .address {
+    margin-top: -130px;
+  }
+  .gallary-form .upload button {
+    font-size: 12px;
+  }
+  .gallary-form .addbtn {
+    width: 120px;
+    font-size: 12px;
+  }
+  .col-md-2.collapsed {
+    width: 50px !important;
+    // overflow: hidden;
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 867px) {
+  .card {
+    margin-left: -30px !important;
+  }
+}
+@media (max-width: 767px) {
+  .explaination {
+    display: none;
+  }
+  .addProjectBox {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 100% 0%;
+    padding: 20px 20px;
+  }
+
+  .card {
+    width: 88vw;
+    height: 88vh !important;
+    margin: -5px 0px 0px -60px !important;
+  }
+  // .card-body{
+  //   width:70% ;
+  //   margin-top: -640px;
+  //   margin-left: 150px;
+  // }
+  .card-body textarea {
+    height: 80px !important;
+  }
+  .body-card {
+    margin-top: -50px;
+    font-size: 12px;
+    grid-template-columns: 40% 50%;
+  }
+  // .alert{
+  //   height: 75px;
+  //   font-size: 10px;
+  //  }
+  .connectionbtn {
+    margin-left: 150px !important;
+    margin-top: 5px !important;
+  }
+
+  .addGallaryBox .advices,
+  .gallarytitle button {
+    display: none;
+  }
+  .gallary-form {
+    width: 580px;
+    height: 67vh;
+    margin-left: 7px;
+    margin-top: 10px;
+    grid-template-rows: 80px 130px 80px 80px;
+  }
+  .gallary-form .newinput {
+    width: 69% !important;
+  }
+  .savebtn {
+    margin-top: 140px;
+    margin-left: -65px !important;
+  }
+  .save3 {
+    margin-left: 130px !important;
+  }
+
+  .save {
+    margin-left: 330px !important;
+    margin-top: 100px !important;
+  }
+  .save2 {
+    margin-left: 180px !important;
+    margin-top: 60px !important;
+  }
+  .save3 {
+    margin-left: 200px !important;
+  }
+  .address {
+    margin-top: -130px;
+    display: flex;
+    flex-direction: column;
+  }
+  .address select {
+    width: 120px;
+    margin-left: -10px;
+  }
+  .select2 {
+    margin-top: 10px !important;
+    margin-left: 23px !important;
+  }
+
+  .gallary-form .upload button {
+    font-size: 12px;
+  }
+  .gallary-form .addbtn {
+    width: 120px;
+    font-size: 12px;
+  }
+  .col-md-2.collapsed {
+    width: 50px !important;
+    overflow: hidden;
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 867px) {
+  .card {
+    margin-left: -30px !important;
+  }
+}
+@media (max-width: 768px) {
+  .explaination {
+    display: none;
+  }
+  .addProjectBox {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 100% 0%;
+    padding: 20px 20px;
+  }
+  .card {
+    width: 99vw;
+    margin: -5px -5px 0 -9px !important;
+  }
+
+  // .card-body{
+  //   width:60% ;
+  //   margin-top: -600px;
+  //   margin-left: 150px;
+  // }
+  .body-card {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-top: -50px;
+  }
+  .body-card input {
+    margin-bottom: -10px !important;
+    height: 25px;
+    width: 160px !important;
+    font-size: 10px;
+  }
+  .myinput {
+    width: 60% !important;
+    margin-left: -35px;
+    font-size: 8px !important;
+    height: 30px;
+  }
+  .eye {
+    height: 30px;
+    margin-top: -2px;
+    border: 0px !important;
+  }
+  // input{
+  //   height: 30px !important;
+  // }
+  .body-card select {
+    margin-left: -5px !important;
+    width: 160px;
+    height: 33px;
+    font-size: 10px;
+  }
+  .bg-side {
+    width: 122px !important;
+    font-size: 8px;
+  }
+
+  .Sidebar {
+    width: 100px !important;
+  }
+  .ui-w-80 {
+    width: 80px !important;
+    height: auto;
+    border-radius: 50%;
+    font-size: 10px;
+  }
+  .plusbtn i {
+    margin-top: 5px;
+    margin-left: 1px;
+  }
+  .media-body button {
+    margin-top: -50px;
+  }
+  //  .alert{
+  //  height: 60px;
+  //  font-size: 8px;
+  //  width: 160px;
+  //  margin-bottom: -5px !important;
+  // }
+  .infocontain {
+    margin-left: -10px !important;
+  }
+  .infocontain input,
+  .infocontain textarea {
+    width: 165px !important;
+  }
+  .addGallaryBox .advices,
+  .gallarytitle button {
+    display: none;
+  }
+  .gallary-form {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: -660px;
+    padding: 20px 20px 170px;
+    border-radius: 0;
+    overflow: scroll;
+  }
+  .gallary-form .newinput {
+    width: 62% !important;
+  }
+
+  .savebtn {
+    //  margin-top: -5px ;
+    margin-left: 20px !important;
+  }
+
+  .save {
+    margin-left: 140px !important;
+    margin-top: 100px !important;
+  }
+  .save2 {
+    margin-left: -15px !important;
+  }
+  .save3 {
+    margin-left: -30px !important;
+  }
+  .address {
+    margin-top: -130px;
+  }
+  .countrylabel {
+    margin-top: 130px !important;
+    margin-bottom: 20px;
+  }
+  .address select {
+    margin-top: -250px !important;
+    margin-left: 0px !important;
+    width: 165px;
+  }
+  .gallary-form .upload button {
+    font-size: 10px;
+    height: 35px !important;
+    width: 150px !important;
+    margin-left: -10px;
+  }
+  .gallary-form .addbtn {
+    width: 120px;
+    font-size: 12px;
+  }
+  //  .col-md-2.collapsed {
+  //   width: 50px !important;
+  //    overflow: hidden;
+  //   margin-right: 70px;
+  // }
+  .gallary-form textarea {
+    height: 60px !important;
+  }
+  .gallary-form button {
+    margin-left: 50px;
+    height: 30px !important;
+  }
+  button {
+    height: 32px;
+  }
+}

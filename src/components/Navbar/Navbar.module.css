@@ -1,0 +1,39 @@
+.noBoxShadow{
+    box-shadow: none !important;
+    border:none !important;
+    
+}
+.linksss {
+    text-decoration: unset !important;
+    color: black;
+
+}
+.linkss {
+    text-decoration: unset !important;
+    color: black;
+    border:unset !important;
+    box-shadow:0.01em 0.01em 0.2em rgba(0, 0, 0, 0.4);
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.47) !important;
+    
+
+}
+.linkss:hover {
+    text-decoration: unset !important;
+    color: black;
+    border:unset !important;
+    box-shadow:0.1em 0.1em 0.5em rgba(0, 0, 0, 0.4);
+    width: 90%;
+    background-color: rgb(234, 242, 242)!important;
+
+
+}
+.profileMenu{
+    width: 250px !important;
+  box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+  border:unset !important;
+  background-color: rgba(255, 255, 255, 0.801) !important;
+}
+.logo{
+    width: 150px;
+}
