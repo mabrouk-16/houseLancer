@@ -31,14 +31,19 @@ export const allChats = createApi({
             invalidatesTags: ['Chats']
         }),
         sendNotification: builder.mutation({  // Changed from query to mutation
-            query: ({ receiverId, message }) => createRequest(`messages/sendNotification`, 'POST', { receiverId, message }),
+            query: ({ receiverId, notification }) => createRequest(`messages/send/notification`, 'POST', { receiverId, notification }),
             invalidatesTags: ['Chats']
-        })
+        }),
+        getNotification: builder.query({
+            query: () => createRequest(`messages/show/notification`, 'GET'),
+            providesTags:['Chats']
+        }),
     }),
 });     
 
 export const {
     useGetMessagesQuery,
     useSendMessageMutation,
-    useSendNotificationMutation  
+    useSendNotificationMutation  ,
+    useGetNotificationQuery
 } = allChats;

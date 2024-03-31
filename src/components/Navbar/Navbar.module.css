@@ -33,7 +33,22 @@
   box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
   border:unset !important;
   background-color: rgba(255, 255, 255, 0.801) !important;
+  
+}
+.message{
+    width: 300px !important;
+    max-height: 400px;
+    box-shadow:0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+    border:unset !important;
+    background-color: rgba(255, 255, 255, 0.801) !important;
+    overflow-y: scroll;
 }
 .logo{
     width: 150px;
+}
+.badge{
+    top: -15px;
+    left: 100%;
+    width: 15px;
+    height: 15px !important;
 }

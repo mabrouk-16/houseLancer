@@ -102,7 +102,7 @@ export default function ChatComponent({ senderData }) {
     try {
       console.log({ receiverId, message: inputMessage });
       await sendMessage({ receiverId, message: inputMessage });
-      await sendNotification({receiverId,message: inputMessage})
+      await sendNotification({receiverId,notification: inputMessage})
 
      
 
