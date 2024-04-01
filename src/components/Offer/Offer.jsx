@@ -30,7 +30,7 @@ function Offer({data}) {
             <p><i className="fa-regular fa-clock"></i> {time}</p>
           </div>
         </div>
-
+        {data?.status === 'accepted' ? <label className=' bg-success px-2 rounded ms-auto'>{data?.status}</label> : <label className=' bg-danger px-2 rounded ms-auto'>{data?.status}</label>}
       </div>
       <p className='mb-3 px-2 overflow-hidden'>{data.description}</p>
       <span></span>

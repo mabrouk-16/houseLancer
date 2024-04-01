@@ -5,8 +5,6 @@ import { useForm } from 'react-hook-form';
 import styles from './AddOfer.module.css'
 import { useAddOfferMutation } from '../../services/offer';
 import {useProjectDetailsQuery } from '../../services/api';
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
 function AddOffer({ data, onOfferAdded }) {
   const [errorMessage, setErrorMessage] = useState('');
   const { register, handleSubmit, trigger, formState: { errors } } = useForm();
@@ -30,22 +28,14 @@ function AddOffer({ data, onOfferAdded }) {
       console.log(values)
       const response = await addOffer({ ...values, project: data });
   console.log('Offer added successfully:', response);
-  if(response.data.success){
-toast.success("Success Notification !")
 
-  }
-  console.log(response.data.success)
-
-        // onOfferAdded(response.data.offer); // Notify parent component about the new offer
-      
-    } catch (error) {
+  } catch (error) {
       setErrorMessage(error.message); // Handle error
     }
   };
 
   return (
     <>
-      <ToastContainer/>
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="mb-3 d-flex">
         <div className="INP1 col-6 col-sm-4 me-2 me-md-5">

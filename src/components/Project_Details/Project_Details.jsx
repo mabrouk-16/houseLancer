@@ -32,16 +32,16 @@ function Project_Details() {
   console.log(projectdetails);
 
   // Return loading indicator if data is fetching
-  if (isFetching) {
-    return (
-      <div>
-        <div id="loading-wrapper">
-          <div id="loading-text">LOADING</div>
-          <div id="loading-content"></div>
-        </div>
-      </div>
-    );
-  }
+//   if (isFetching) {
+//     return (
+//       <div>
+//         <div id="loading-wrapper">
+//           <div id="loading-text">LOADING</div>
+//           <div id="loading-content"></div>
+//         </div>
+//       </div>
+//     );
+//   }
 
   // Return an error message if data is still undefined
   if (!projectdetails) {

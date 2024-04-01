@@ -7,6 +7,7 @@ import AddProject from '../AddProject/AddProject';
 
 function Projects() {
   const nav = useNavigate();
+  const userData=JSON.parse(localStorage.getItem('userData'));
   const { data, isFetching ,isSuccess} = useGetProjectsQuery();
   const [projects, setProjects] = useState([]);
 
@@ -45,9 +46,9 @@ function Projects() {
         <div className="">
           <div className="container d-flex justify-content-between">
             <h2 className="m-3 mt-5">All Projects :</h2>
-            <button onClick={() => { hideModalHandler() }}  data-bs-toggle="modal" data-bs-target="#exampleModal"className={`me-5 mt-5 ${styles.addProject}`}>
+            {userData.role==="User"?(<button onClick={() => { hideModalHandler() }}  data-bs-toggle="modal" data-bs-target="#exampleModal"className={`me-5 mt-5 ${styles.addProject}`}>
               <i className="fa-solid fa-add fs-4 m-auto "></i>
-            </button>
+            </button>):""}
           </div>
           {projects.map((item) => {
             return (
