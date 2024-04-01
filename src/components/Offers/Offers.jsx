@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+/* eslint-disable react/prop-types */
+import  { useEffect, useState } from 'react';
 import Offer from '../Offer/Offer';
 import { useGetProjectOffersQuery } from '../../services/offer';
 

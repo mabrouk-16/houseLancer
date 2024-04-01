@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import styles from './Offer.module.css'
 import image from '../../../public/images/man-300x300.png'
