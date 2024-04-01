@@ -64,12 +64,12 @@ function Navbar({ userData, logOut }) {
               {userData && <li className="nav-item">
                 <NavLink className="nav-link" to="projects">Projects</NavLink>
               </li>}
-              {userData && <li className="nav-item">
+              {/* {userData && <li className="nav-item">
                 <NavLink className="nav-link" to="designer">Find Designer</NavLink>
               </li>}
               {userData && <li className="nav-item">
                 <NavLink className="nav-link" to="gallery">Projects Gallery</NavLink>
-              </li>}
+              </li>} */}
 
 
 

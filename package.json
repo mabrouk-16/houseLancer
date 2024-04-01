@@ -23,6 +23,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/three": "^0.139.0",
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
+    "antd": "^5.16.0",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
     "chat-app-yt": "file:..",

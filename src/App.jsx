@@ -24,7 +24,7 @@ import AboutUser from "./components/UserProfile/AboutUser";
 import DesignerGallery from "./components/UserProfile/DesignerGallery";
 import DesignerOffers from "./components/UserProfile/DesignerOffers";
 import UserDProjects from "./components/UserProfile/UserDProjects";
-import Home1 from "./components/Home1/Home1";
+import Home from "./components/Home/Home";
 import UserProject_Details from "./components/UserProject_Details/UserProject_Details";
 
 function App() {
@@ -53,11 +53,13 @@ function App() {
     {
       path: '', element: <Layout userData={userData} setUserData={setUserData} />, children: [
         { path: 'about', element: <AboutPage /> },
-        { index: true, element: <Home1 /> },
+        { index: true, element: <Home /> },
         // { path: 'create', element: <ThreeContainer /> },
         { path: 'projects', element: <Projects /> },
         {
-          path: 'designer', element: <UserData />, children:
+          path: 'profile', element:isUserLoggedIn ?
+          <UserData /> :
+          <Navigate to="/login" /> , children:
             [
               { index: 'true', element: <AboutUser /> },
               { path: 'aboutUser', element: <AboutUser /> },
@@ -75,7 +77,7 @@ function App() {
         { path: "/userprojectdetails/:id", element: <UserProject_Details /> },
         { path: "/addproject", element: <AddProject /> },
         {
-          path: "/profile", element: isUserLoggedIn ?
+          path: "/setting", element: isUserLoggedIn ?
             <UserProfile /> :
             <Navigate to="/login" />, children: [
               { index: 'true', element: <General  /> },
